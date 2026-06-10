@@ -547,8 +547,7 @@ function initFormsAndLeads() {
     const leadForm = document.getElementById('leadForm');
     const contactForm = document.getElementById('contactForm');
 
-    // Setup Local Storage Submissions Table Drawer
-    initDemoSubmissionsDrawer();
+
 
     if (leadForm) {
         leadForm.addEventListener('submit', (e) => {
@@ -695,11 +694,9 @@ function submitForm(form) {
             }
         })
         .finally(() => {
-            // Restore button
             submitBtn.disabled = false;
             submitBtn.classList.remove('btn-loading');
             submitBtn.innerHTML = originalText;
-            renderSubmissions();
         });
     } else {
         // Fallback for local demo/development
@@ -712,7 +709,6 @@ function submitForm(form) {
             submitBtn.disabled = false;
             submitBtn.classList.remove('btn-loading');
             submitBtn.innerHTML = originalText;
-            renderSubmissions();
         }, 800);
     }
 }
@@ -765,65 +761,4 @@ function showToast(title, message, type = 'success') {
     }, 5000);
 }
 
-/* ==========================================================================
-   DEMO SUBMISSIONS DASHBOARD (LOCAL STORAGE VIEW)
-   ========================================================================== */
-function initDemoSubmissionsDrawer() {
-    const drawer = document.getElementById('demoDashboardDrawer');
-    const header = document.getElementById('demoDashboardHeader');
 
-    if (!drawer || !header) return;
-
-    header.addEventListener('click', () => {
-        drawer.classList.toggle('open');
-    });
-
-    renderSubmissions();
-}
-
-function renderSubmissions() {
-    const tableBody = document.getElementById('demoSubmissionsBody');
-    const badge = document.getElementById('demoDashboardBadge');
-    
-    if (!tableBody) return;
-
-    const leads = JSON.parse(localStorage.getItem('insurance_leads') || '[]');
-    
-    // Update Badge Count
-    if (badge) {
-        badge.textContent = leads.length;
-        badge.style.display = leads.length > 0 ? 'inline-block' : 'none';
-    }
-
-    if (leads.length === 0) {
-        tableBody.innerHTML = `
-            <tr>
-                <td colspan="7" class="demo-submission-empty">
-                    No lead inquiries received yet. Submit the Quote Form or Contact Form to see entries log in real-time.
-                </td>
-            </tr>
-        `;
-        return;
-    }
-
-    tableBody.innerHTML = leads.map(lead => `
-        <tr>
-            <td style="font-weight: 600; color: var(--text-primary);">${escapeHtml(lead.name)}</td>
-            <td>${escapeHtml(lead.phone)}</td>
-            <td>${escapeHtml(lead.email)}</td>
-            <td><span class="badge-licensed" style="font-size:0.6rem; padding: 0.1rem 0.4rem;">${escapeHtml(lead.state)}</span></td>
-            <td style="font-weight: 500;">${escapeHtml(lead.coverage)}</td>
-            <td>${escapeHtml(lead.startDate || 'Immediate')}</td>
-            <td style="color: var(--text-muted); font-size:0.8rem;">${lead.date}</td>
-        </tr>
-    `).join('');
-}
-
-function escapeHtml(str) {
-    if (!str) return '';
-    return str.replace(/&/g, "&amp;")
-              .replace(/</g, "&lt;")
-              .replace(/>/g, "&gt;")
-              .replace(/"/g, "&quot;")
-              .replace(/'/g, "&#039;");
-}
