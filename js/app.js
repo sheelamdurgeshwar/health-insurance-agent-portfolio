@@ -583,8 +583,9 @@ function validateForm(form) {
             const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
             isFieldValid = emailRegex.test(input.value.trim());
         } else if (input.type === 'tel') {
-            const phoneRegex = /^\+?[\d\s-]{10,15}$/;
-            isFieldValid = phoneRegex.test(input.value.trim());
+            const cleaned = input.value.trim().replace(/[\s-]/g, '');
+            const phoneRegex = /^\+91[6-9]\d{9}$/;
+            isFieldValid = phoneRegex.test(cleaned);
         }
 
         if (!isFieldValid) {
