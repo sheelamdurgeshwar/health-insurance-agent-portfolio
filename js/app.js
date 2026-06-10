@@ -672,7 +672,7 @@ function submitForm(form) {
         .then(async (response) => {
             const json = await response.json();
             if (response.status === 200) {
-                showToast('Check Your Email!', `Inquiry sent successfully to sheelamdurgeshwar@gmail.com!`, 'success');
+                showToast('Check Your Email!', `Inquiry sent successfully to msinsuranceinfo@gmail.com!`, 'success');
                 form.reset();
                 if (form.id === 'leadForm') {
                     closeQuoteModal();
