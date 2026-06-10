@@ -9,7 +9,7 @@
 // 1. Visit https://web3forms.com/ and submit your email (e.g. sheelamdurgeshwar@gmail.com) to get a free Access Key.
 // 2. Paste your Access Key below.
 // 3. (Optional) If left as "YOUR_ACCESS_KEY_HERE" or empty, submissions will still be saved to the local dashboard (LocalStorage).
-const WEB3FORMS_ACCESS_KEY = "YOUR_ACCESS_KEY_HERE";
+const WEB3FORMS_ACCESS_KEY = "09e9cb65-4bf8-4c22-9369-cc21ed915c7a";
 
 // Global variable to hold the last completed policy finder state
 window.lastPolicyFinderState = null;
