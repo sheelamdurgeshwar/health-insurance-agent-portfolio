@@ -620,6 +620,7 @@ function submitForm(form) {
     const email = formData.get('email');
     const phone = formData.get('phone');
     const state = formData.get('state') || 'Online Inquiry';
+    const startDate = formData.get('start_date') || 'Immediate';
     const coverage = formData.get('coverage') || 'General Contact Request';
     const userMessage = formData.get('message') || 'Interested in a policy review.';
 
@@ -631,12 +632,13 @@ function submitForm(form) {
         email,
         phone,
         state,
+        startDate,
         coverage,
         message: userMessage
     };
 
     // Include Policy Finder results if they exist and match the selected coverage
-    let emailMessage = `Name: ${name}\nPhone: ${phone}\nEmail: ${email}\nState: ${state}\nDesired Coverage: ${coverage}\nMessage: ${userMessage}`;
+    let emailMessage = `Name: ${name}\nPhone: ${phone}\nEmail: ${email}\nState: ${state}\nDesired Coverage Start Date: ${startDate}\nDesired Coverage: ${coverage}\nMessage: ${userMessage}`;
     if (window.lastPolicyFinderState && window.lastPolicyFinderState.recommendation && window.lastPolicyFinderState.recommendation.coverageKey === coverage) {
         const answers = window.lastPolicyFinderState.answers;
         const rec = window.lastPolicyFinderState.recommendation;
@@ -796,7 +798,7 @@ function renderSubmissions() {
     if (leads.length === 0) {
         tableBody.innerHTML = `
             <tr>
-                <td colspan="6" class="demo-submission-empty">
+                <td colspan="7" class="demo-submission-empty">
                     No lead inquiries received yet. Submit the Quote Form or Contact Form to see entries log in real-time.
                 </td>
             </tr>
@@ -811,6 +813,7 @@ function renderSubmissions() {
             <td>${escapeHtml(lead.email)}</td>
             <td><span class="badge-licensed" style="font-size:0.6rem; padding: 0.1rem 0.4rem;">${escapeHtml(lead.state)}</span></td>
             <td style="font-weight: 500;">${escapeHtml(lead.coverage)}</td>
+            <td>${escapeHtml(lead.startDate || 'Immediate')}</td>
             <td style="color: var(--text-muted); font-size:0.8rem;">${lead.date}</td>
         </tr>
     `).join('');

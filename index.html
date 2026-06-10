@@ -640,16 +640,20 @@
                                 <span class="form-error">Please select your state.</span>
                             </div>
 
-                            <div class="form-group col-span-2">
+                            <div class="form-group">
+                                <label class="form-label" for="contactStartDate">Desired Coverage Start Date *</label>
+                                <input type="date" id="contactStartDate" name="start_date" class="form-input" required>
+                                <span class="form-error">Please select a desired start date.</span>
+                            </div>
+
+                            <div class="form-group">
                                 <label class="form-label" for="contactCoverage">Preferred Coverage Target *</label>
                                 <select id="contactCoverage" name="coverage" class="form-input" required>
                                     <option value="" disabled selected>Select Coverage Option</option>
                                     <option value="Family Health Plans">Family Health Plans</option>
-                                    <option value="Individual & Family Plans (ACA)">Individual &amp; ACA Subsidized
-                                        Plans</option>
+                                    <option value="Individual & Family Plans (ACA)">Individual &amp; ACA Subsidized Plans</option>
                                     <option value="Medicare & Senior Plans">Medicare &amp; Senior Supplements</option>
-                                    <option value="Critical Illness & Short-Term">Critical Illness &amp; Gap Policies
-                                    </option>
+                                    <option value="Critical Illness & Short-Term">Critical Illness &amp; Gap Policies</option>
                                     <option value="General Consultation">General Discussion / Plan Review</option>
                                 </select>
                                 <span class="form-error">Please select a coverage type.</span>
@@ -886,16 +890,20 @@
                             <span class="form-error">Please select your state.</span>
                         </div>
 
-                        <div class="form-group col-span-2">
+                        <div class="form-group">
+                            <label class="form-label" for="leadStartDate">Desired Coverage Start Date *</label>
+                            <input type="date" id="leadStartDate" name="start_date" class="form-input" required>
+                            <span class="form-error">Please select a desired start date.</span>
+                        </div>
+
+                        <div class="form-group">
                             <label class="form-label" for="leadCoverage">Desired Coverage Plan *</label>
                             <select id="leadCoverage" name="coverage" class="form-input" required>
                                 <option value="" disabled selected>Select Plan Type</option>
                                 <option value="Family Health Plans">Family Health Plans</option>
-                                <option value="Individual & Family Plans (ACA)">Individual &amp; Family Plans (ACA)
-                                </option>
+                                <option value="Individual & Family Plans (ACA)">Individual &amp; Family Plans (ACA)</option>
                                 <option value="Medicare & Senior Plans">Medicare &amp; Senior Plans</option>
-                                <option value="Critical Illness & Short-Term">Critical Illness &amp; Short-Term Gap
-                                </option>
+                                <option value="Critical Illness & Short-Term">Critical Illness &amp; Short-Term Gap</option>
                             </select>
                             <span class="form-error">Please select a coverage plan.</span>
                         </div>
@@ -950,12 +958,13 @@
                             <th>Email</th>
                             <th>State</th>
                             <th>Coverage Selected</th>
+                            <th>Start Date</th>
                             <th>Date / Time</th>
                         </tr>
                     </thead>
                     <tbody id="demoSubmissionsBody">
                         <tr>
-                            <td colspan="6" class="demo-submission-empty">
+                            <td colspan="7" class="demo-submission-empty">
                                 No lead inquiries received yet. Submit the Quote Form or Contact Form to see entries log
                                 in real-time.
                             </td>
