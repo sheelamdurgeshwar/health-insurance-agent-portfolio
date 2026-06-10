@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Optimization -->
+    <title>Sreedhar Madishetty | Certified Health Insurance Advisor & Independent Agent</title>
+    <meta name="description"
+        content="Secure your future with personalized, unbiased health insurance guidance. Compare ACA, Medicare, Family, and HSA plans from top national carriers with Sreedhar Madishetty.">
+    <meta name="keywords"
+        content="health insurance agent, medical insurance portfolio, ACA, Medicare supplement, independent health broker, Sreedhar Madishetty, health plans">
+    <meta name="author" content="Sreedhar Madishetty">
+
+    <!-- Open Graph tags for Social Sharing -->
+    <meta property="og:title" content="Sreedhar Madishetty | Certified Health Insurance Advisor">
+    <meta property="og:description"
+        content="Unbiased guidance, premium carrier networks, and custom policies designed for your lifestyle and budget. Find your ideal plan in 60 seconds.">
+    <meta property="og:image" content="sreedhar-madishetty.png">
+    <meta property="og:type" content="website">
+
+    <!-- Design Stylesheets -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Modular Application Logic -->
+    <script src="js/app.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-bar" id="scrollProgressBar"></div>
+    </div>
+
+    <!-- Header & Sticky Navigation -->
+    <header class="site-header" id="siteHeader">
+        <div class="container header-container">
+            <a href="#" class="logo-wrapper">
+                <div class="logo-brand">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
+                    </svg>
+                    <span>MS Insurance Services</span>
+                </div>
+                <span class="badge-licensed">Licensed Advisor</span>
+            </a>
+
+            <!-- Menu Navigation Links -->
+            <nav class="nav-menu" id="navMenu">
+                <a href="#about" class="nav-link">About Sreedhar</a>
+                <a href="#policies" class="nav-link">Policies &amp; Services</a>
+                <a href="#policy-finder" class="nav-link">Smart Policy Finder</a>
+                <a href="#faqs" class="nav-link">FAQs</a>
+                <a href="#contact" class="nav-link">Contact</a>
+
+                <!-- Theme Toggle Button inside mobile menu for accessibility -->
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle Theme"
+                    style="margin-top: 1rem; align-self: flex-start; display: none;">
+                    <svg class="moon-icon" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
+                    </svg>
+                    <svg class="sun-icon" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.46 5.05l-.707-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2h1a1 1 0 100 2h-1z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </button>
+            </nav>
+
+            <!-- Navigation Action Buttons -->
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggleBtn" aria-label="Toggle Theme">
+                    <svg class="moon-icon" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
+                    </svg>
+                    <svg class="sun-icon" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.46 5.05l-.707-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2h1a1 1 0 100 2h-1z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </button>
+                <button class="btn btn-primary" data-modal-open="quoteModal"
+                    style="padding: 0.65rem 1.4rem; font-size: 0.9rem;">Get a Quote</button>
+            </div>
+
+            <!-- Hamburger menu button for smaller screens -->
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                    stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content Layout -->
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero-section" id="hero">
+            <div class="container grid-2">
+
+                <!-- Left Hand Text Content -->
+                <div class="hero-content">
+                    <span class="section-tag">PERSONALIZED LICENSED BROKER</span>
+                    <h1 class="hero-editorial">Securing Your Health, <br><span class="text-gradient">Protecting Your
+                            Future.</span></h1>
+                    <p class="hero-description">Personal health insurance plans tailored to your life stage, family
+                        structure, and budget. Unbiased guidance that prioritizes your wellness, not carrier commission.
+                    </p>
+
+                    <div class="hero-ctas">
+                        <button class="btn btn-primary" data-modal-open="quoteModal">Get a Free Quote</button>
+                        <a href="#policy-finder" class="btn btn-secondary">Find Your Policy</a>
+                    </div>
+
+                    <div class="hero-badges">
+                        <div class="hero-badge-item">
+                            <span class="hero-badge-num">5+</span>
+                            <span class="hero-badge-txt">Years Experience</span>
+                        </div>
+                        <div class="hero-badge-item">
+                            <span class="hero-badge-num">5k+</span>
+                            <span class="hero-badge-txt">Families Covered</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Hand Agent Graphics -->
+                <div class="hero-image-wrapper">
+                    <div class="hero-image-bg"></div>
+                    <img src="sreedhar-madishetty.png" alt="MSinsurance service, Certified Health Insurance Specialist"
+                        class="hero-image">
+
+                    <!-- Floating trust overlays -->
+                    <div class="floating-accent floating-accent-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <span>Certified</span>
+                    </div>
+
+                    <div class="floating-accent floating-accent-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M6.267 3.455a.75.75 0 00-.708-.523H4.5a.75.75 0 00-.75.75v1.5a.75.75 0 00.75.75h1.059a.75.75 0 00.708-.523l.182-.547a.25.25 0 01.237-.18h2.628a.25.25 0 01.237.18l.182.547a.75.75 0 00.708.523H10.5a.75.75 0 00.75-.75v-1.5a.75.75 0 00-.75-.75H9.441a.75.75 0 00-.708.523l-.182.547a.25.25 0 01-.237.18H5.698a.25.25 0 01-.237-.18l-.182-.547zM3.75 7.5a.75.75 0 00-.75.75v7.5c0 .414.336.75.75.75h12.5a.75.75 0 00.75-.75v-7.5a.75.75 0 00-.75-.75H3.75zm3.5 3a.75.75 0 00-.75.75v1.5a.75.75 0 001.5 0v-1.5a.75.75 0 00-.75-.75zm5.5.75a.75.75 0 011.5 0v1.5a.75.75 0 01-1.5 0v-1.5z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <span>Top Carrier Network</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+
+        <!-- About Sreedhar Madishetty Section -->
+        <section class="section-padding" id="about">
+            <div class="container grid-2 about-grid fade-in-on-scroll">
+
+                <!-- Left Hand Portrait Column -->
+                <div class="about-image-wrapper">
+                    <img src="sreedhar-madishetty.png" alt="Sreedhar Madishetty portrait portrait">
+                </div>
+
+                <!-- Right Hand Bio Column -->
+                <div>
+                    <span class="section-tag">MEET YOUR ADVISOR</span>
+                    <h2 class="editorial-heading">Sreedhar Madishetty</h2>
+                    <p class="about-lead">"My mission is to simplify the complex world of medical policies so you can
+                        make confident, informed decisions for your family."</p>
+
+                    <div class="about-text">
+                        <p style="margin-bottom: 1.2rem;">With over 5 years as an independent health insurance
+                            consultant, I help individuals, growing families, and retirees navigate local HMO, PPO, HSA,
+                            and Medicare markets. Because I do not represent a single insurance company, I focus
+                            entirely on finding you the best coverage values, subsidies, and networks available.</p>
+                        <p>I analyze hundreds of policies annually, evaluating premium costs, co-pay ratios, deductible
+                            margins, and prescription formularies to design custom health strategies that lock in secure
+                            coverage without unnecessary expenses.</p>
+                    </div>
+
+                    <!-- Independent Agent Advantage Callout -->
+                    <div class="why-independent">
+                        <h4>Why Use an Independent Agent?</h4>
+                        <p>Unlike direct carrier agents, I represent multiple A-rated networks. This means I analyze
+                            plans across carrier boundaries to locate premium discounts and ACA subsidies that direct
+                            carrier agents aren't allowed to offer you.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Policies & Services Section -->
+        <section class="section-padding services-section" id="policies">
+            <div class="container">
+
+                <div class="section-header fade-in-on-scroll">
+                    <span class="section-tag">POLICY PORTFOLIO</span>
+                    <h2 class="editorial-heading">Insurance Plans Designed For Your Life Stage</h2>
+                    <p>Compare plans, deductibles, copay details, and carrier inclusions. Sreedhar Madishetty provides
+                        tailored
+                        consultation across all major health niches.</p>
+                </div>
+
+                <!-- Services Grid Layout -->
+                <div class="grid-2 fade-in-on-scroll" style="margin-bottom: 3rem;">
+
+                    <!-- Card 1: Family Health Plans -->
+                    <div class="glass-card service-card">
+                        <div class="service-icon-box">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                stroke="currentColor" style="width:28px;height:28px;">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Family Health Plans</h3>
+                        <p class="service-desc">Comprehensive coverage structures protecting your spouse, children, and
+                            dependents. Structured to reduce co-pays on pediatric visits, specialist referrals, and
+                            family prescriptions.</p>
+                        <div class="service-details">
+                            <div class="service-details-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                <span>Shared Deductible Limits</span>
+                            </div>
+                            <div class="service-details-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                <span>Preventive Care Covered 100%</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-secondary service-cta" data-modal-open="quoteModal"
+                            data-prefill="Family Health Plans">Get Details</button>
+                    </div>
+
+                    <!-- Card 2: Individual & Family Plans (ACA) -->
+                    <div class="glass-card service-card">
+                        <div class="service-icon-box">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                stroke="currentColor" style="width:28px;height:28px;">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-.778.099-1.533.284-2.253" />
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Individual &amp; ACA Plans</h3>
+                        <p class="service-desc">Affordable Care Act (Obamacare) health options. I assist in calculating
+                            federal tax credit subsidies to secure metallic level (Bronze, Silver, Gold) policies with
+                            low premiums.</p>
+                        <div class="service-details">
+                            <div class="service-details-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                <span>Federal Tax Credit Subsidies</span>
+                            </div>
+                            <div class="service-details-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                <span>Pre-existing Conditions Covered</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-secondary service-cta" data-modal-open="quoteModal"
+                            data-prefill="Individual &amp; Family Plans (ACA)">Get Details</button>
+                    </div>
+
+                </div>
+
+                <div class="grid-2 fade-in-on-scroll">
+
+                    <!-- Card 3: Medicare & Senior Plans -->
+                    <div class="glass-card service-card">
+                        <div class="service-icon-box">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                stroke="currentColor" style="width:28px;height:28px;">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.62 48.62 0 0112 20.9c2.785 0 5.43-.233 8.006-.684a48.648 48.648 0 00-.49-6.368M12 20.9V12m0 0L3.195 8.352a1.2 1.2 0 01-.195-2.072L9.82 2.228a1.2 1.2 0 011.236 0L19.83 6.3a1.2 1.2 0 01-.194 2.072L12 12zm0 0h.01" />
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Medicare &amp; Senior Plans</h3>
+                        <p class="service-desc">Tailored advice for seniors aged 65 and up. Explore Medicare Advantage
+                            (Part C), Medicare Supplements (Medigap Plan G), and Part D prescription coverage networks.
+                        </p>
+                        <div class="service-details">
+                            <div class="service-details-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                <span>Medigap &amp; Supplement Integration</span>
+                            </div>
+                            <div class="service-details-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                <span>Part D Formulary Reviews</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-secondary service-cta" data-modal-open="quoteModal"
+                            data-prefill="Medicare &amp; Senior Plans">Get Details</button>
+                    </div>
+
+                    <!-- Card 4: Critical Illness & Short-Term -->
+                    <div class="glass-card service-card">
+                        <div class="service-icon-box">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                stroke="currentColor" style="width:28px;height:28px;">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z" />
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Critical Illness &amp; Gap Care</h3>
+                        <p class="service-desc">Gap protection models supplying lump-sum cash payouts upon diagnosis of
+                            critical illnesses (heart attack, cancer) or short-term accident policy covers.</p>
+                        <div class="service-details">
+                            <div class="service-details-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                <span>High Deductible Gap Coverage</span>
+                            </div>
+                            <div class="service-details-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                <span>Lump-Sum Diagnostics Payouts</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-secondary service-cta" data-modal-open="quoteModal"
+                            data-prefill="Critical Illness &amp; Short-Term">Get Details</button>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Smart Policy Finder Wizard Section -->
+        <section class="section-padding" id="policy-finder">
+            <div class="container">
+
+                <div class="section-header fade-in-on-scroll">
+                    <span class="section-tag">INTERACTIVE GUIDE</span>
+                    <h2 class="editorial-heading">Smart Policy Finder</h2>
+                    <p>Answer four simple questions about your coverage priorities, family dynamic, and budget goals to
+                        identify your optimized category recommendations.</p>
+                </div>
+
+                <!-- Wizard Board Container -->
+                <div class="glass-card finder-wrapper fade-in-on-scroll" id="policyFinderWizard">
+
+                    <!-- Progress bar components -->
+                    <div class="finder-header">
+                        <h4 style="font-size: 1.2rem; color: var(--text-primary);">Policy Questionnaire</h4>
+                        <span class="finder-steps-indicator" id="finderStepIndicator">Step 1 of 4</span>
+                    </div>
+
+                    <div class="finder-progress-track">
+                        <div class="finder-progress-fill" id="finderProgressFill"></div>
+                    </div>
+
+                    <!-- STEP 1: Coverage Type -->
+                    <div class="finder-step active" data-step="1">
+                        <h3 class="finder-question">Who will be covered under this health policy?</h3>
+                        <div class="finder-options-grid">
+                            <div class="finder-option-card" data-value="self">
+                                <div class="finder-option-radio"></div>
+                                <div class="finder-option-content">
+                                    <h5>Just Myself</h5>
+                                    <p>Individual medical policy designs.</p>
+                                </div>
+                            </div>
+                            <div class="finder-option-card" data-value="couple">
+                                <div class="finder-option-radio"></div>
+                                <div class="finder-option-content">
+                                    <h5>Myself &amp; Spouse</h5>
+                                    <p>Dual partner coverage structures.</p>
+                                </div>
+                            </div>
+                            <div class="finder-option-card" data-value="family">
+                                <div class="finder-option-radio"></div>
+                                <div class="finder-option-content">
+                                    <h5>Family Unit</h5>
+                                    <p>Parents plus kids/dependents coverage.</p>
+                                </div>
+                            </div>
+                            <div class="finder-option-card" data-value="senior">
+                                <div class="finder-option-radio"></div>
+                                <div class="finder-option-content">
+                                    <h5>Senior Coverage</h5>
+                                    <p>Aged 65+ Medicare supplement pathways.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- STEP 2: Priority -->
+                    <div class="finder-step" data-step="2">
+                        <h3 class="finder-question">What is your primary medical coverage priority?</h3>
+                        <div class="finder-options-grid">
+                            <div class="finder-option-card" data-value="premium">
+                                <div class="finder-option-radio"></div>
+                                <div class="finder-option-content">
+                                    <h5>Lowest Monthly Cost</h5>
+                                    <p>Minimize monthly payments, higher deductibles.</p>
+                                </div>
+                            </div>
+                            <div class="finder-option-card" data-value="copay">
+                                <div class="finder-option-radio"></div>
+                                <div class="finder-option-content">
+                                    <h5>Low Co-pays / Low Deductibles</h5>
+                                    <p>Pay more monthly, but pay very little at doctor visits.</p>
+                                </div>
+                            </div>
+                            <div class="finder-option-card" data-value="doctor">
+                                <div class="finder-option-radio"></div>
+                                <div class="finder-option-content">
+                                    <h5>Keeping My Current Doctor</h5>
+                                    <p>Prioritize broad PPO provider networks.</p>
+                                </div>
+                            </div>
+                            <div class="finder-option-card" data-value="prescription">
+                                <div class="finder-option-radio"></div>
+                                <div class="finder-option-content">
+                                    <h5>Prescription Coverages</h5>
+                                    <p>Heavy focus on tier 1-4 medication coverages.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- STEP 3: Age Range -->
+                    <div class="finder-step" data-step="3">
+                        <h3 class="finder-question">What is your age category range?</h3>
+                        <div class="finder-options-grid">
+                            <div class="finder-option-card" data-value="under-30">
+                                <div class="finder-option-radio"></div>
+                                <div class="finder-option-content">
+                                    <h5>Young Adult (Under 30)</h5>
+                                    <p>HSA/catastrophic plan eligible pathways.</p>
+                                </div>
+                            </div>
+                            <div class="finder-option-card" data-value="30-50">
+                                <div class="finder-option-radio"></div>
+                                <div class="finder-option-content">
+                                    <h5>Mid Life (30 to 50)</h5>
+                                    <p>Focus on comprehensive family protectors.</p>
+                                </div>
+                            </div>
+                            <div class="finder-option-card" data-value="50-64">
+                                <div class="finder-option-radio"></div>
+                                <div class="finder-option-content">
+                                    <h5>Pre-Retirement (50 to 64)</h5>
+                                    <p>Manage chronic care &amp; preventive health tiers.</p>
+                                </div>
+                            </div>
+                            <div class="finder-option-card" data-value="senior-65">
+                                <div class="finder-option-radio"></div>
+                                <div class="finder-option-content">
+                                    <h5>Senior (65+)</h5>
+                                    <p>Medicare advantage / supplement strategies.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- STEP 4: Income Slider -->
+                    <div class="finder-step" data-step="4">
+                        <h3 class="finder-question">Estimate your Annual Household Income:</h3>
+                        <p style="font-size:0.9rem; color:var(--text-muted); margin-bottom: 1rem;">This estimates ACA
+                            subsidies and cost reductions.</p>
+
+                        <div class="finder-slider-container">
+                            <div class="finder-slider-bubble" id="finderIncomeBubble">₹45,000</div>
+                            <input type="range" min="15000" max="150000" step="5000" value="45000" class="finder-slider"
+                                id="finderIncomeSlider">
+                            <div class="finder-slider-labels">
+                                <span>₹15,000</span>
+                                <span>₹80,000</span>
+                                <span>₹1,50,000+</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- RESULT STEP: Dynamic Output -->
+                    <div class="finder-step" data-step="result">
+                        <div class="finder-result-card">
+                            <div class="finder-result-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                            </div>
+
+                            <span class="badge-licensed" id="recPlanBadge">ACA Marketplace Plan</span>
+                            <h3 class="finder-result-title" id="recPlanTitle">Enhanced Silver PPO Plan</h3>
+                            <p class="finder-result-summary" id="recPlanDesc">Based on your family dynamics and priority
+                                inputs, you qualify for silver level ACA plans containing heavy federal premium subsidy
+                                offsets.</p>
+
+                            <div style="display:flex; justify-content:center; gap: 1rem;">
+                                <button class="btn btn-primary" id="lockQuoteBtn">Lock in This Recommendation</button>
+                                <button class="btn btn-secondary" onclick="resetPolicyFinder()">Restart Finder</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Footer Buttons -->
+                    <div class="finder-footer">
+                        <button class="btn btn-secondary" id="finderPrevBtn">Back</button>
+                        <button class="btn btn-primary" id="finderNextBtn">
+                            Next Step
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" stroke-width="2" style="width:16px;height:16px;">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                            </svg>
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Lead Gen & Main Contact Section -->
+        <section class="section-padding contact-section" id="contact">
+            <div class="container grid-2 contact-grid">
+
+                <!-- Left Column info -->
+                <div class="contact-info fade-in-on-scroll">
+                    <span class="section-tag">GET IN TOUCH</span>
+                    <h2 class="editorial-heading">Request A Professional Coverage Consultation</h2>
+                    <p>Skip the carrier phone queues. Connect directly with Sreedhar Madishetty for a licensed
+                        state-specific
+                        evaluation. Receive plan alternatives in writing.</p>
+
+                    <div class="contact-card-item">
+                        <div class="contact-info-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                stroke="currentColor" style="width:20px;height:20px;">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-2.824-1.802-5.194-4.174-7-7l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h5>Direct Call / SMS</h5>
+                            <p style="font-weight:600; color:var(--teal-green);">(800) 555-0190</p>
+                            <p style="font-size:0.85rem;">Mon - Fri: 8:00 AM - 6:00 PM EST</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-card-item">
+                        <div class="contact-info-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                stroke="currentColor" style="width:20px;height:20px;">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h5>Email Inquiries</h5>
+                            <p style="font-weight:600; color:var(--teal-green);">info@msinsuranceservices.com</p>
+                            <p style="font-size:0.85rem;">Average response under 2 business hours.</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-card-item">
+                        <div class="contact-info-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                stroke="currentColor" style="width:20px;height:20px;">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M15 9h3.75M15 12h3.75M15 15h3.75M4.5 19.5h15a2.25 2.25 0 002.25-2.25V14.25M19.5 4.5h-15a2.25 2.25 0 00-2.25 2.25V10.5" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h5>Licensing States</h5>
+                            <p style="font-size: 0.9rem;">Licensed broker in: FL, TX, CA, NY, GA, NC, IL, PA, OH, MI.
+                            </p>
+                            <p style="font-size:0.75rem; color:var(--text-muted);">National Producer Number (NPN):
+                                18940251</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column Form -->
+                <div class="glass-card form-wrapper fade-in-on-scroll">
+                    <h4 style="font-size:1.4rem; margin-bottom: 1.5rem;">Send a Secure Message</h4>
+
+                    <form id="contactForm" novalidate>
+                        <div class="lead-form-grid">
+
+                            <div class="form-group">
+                                <label class="form-label" for="contactName">Full Name *</label>
+                                <input type="text" id="contactName" name="name" class="form-input"
+                                    placeholder="Sreedhar Madishetty" required>
+                                <span class="form-error">Please enter your name.</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" for="contactPhone">Phone Number *</label>
+                                <input type="tel" id="contactPhone" name="phone" class="form-input"
+                                    placeholder="(555) 000-0000" required>
+                                <span class="form-error">Please enter a valid phone number.</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" for="contactEmail">Email Address *</label>
+                                <input type="email" id="contactEmail" name="email" class="form-input"
+                                    placeholder="name@domain.com" required>
+                                <span class="form-error">Please enter a valid email address.</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" for="contactState">State of Residence *</label>
+                                <select id="contactState" name="state" class="form-input" required>
+                                    <option value="" disabled selected>Select State</option>
+                                    <option value="CA">California (CA)</option>
+                                    <option value="FL">Florida (FL)</option>
+                                    <option value="GA">Georgia (GA)</option>
+                                    <option value="IL">Illinois (IL)</option>
+                                    <option value="MI">Michigan (MI)</option>
+                                    <option value="NC">North Carolina (NC)</option>
+                                    <option value="NY">New York (NY)</option>
+                                    <option value="OH">Ohio (OH)</option>
+                                    <option value="PA">Pennsylvania (PA)</option>
+                                    <option value="TX">Texas (TX)</option>
+                                </select>
+                                <span class="form-error">Please select your state.</span>
+                            </div>
+
+                            <div class="form-group col-span-2">
+                                <label class="form-label" for="contactCoverage">Preferred Coverage Target *</label>
+                                <select id="contactCoverage" name="coverage" class="form-input" required>
+                                    <option value="" disabled selected>Select Coverage Option</option>
+                                    <option value="Family Health Plans">Family Health Plans</option>
+                                    <option value="Individual & Family Plans (ACA)">Individual &amp; ACA Subsidized
+                                        Plans</option>
+                                    <option value="Medicare & Senior Plans">Medicare &amp; Senior Supplements</option>
+                                    <option value="Critical Illness & Short-Term">Critical Illness &amp; Gap Policies
+                                    </option>
+                                    <option value="General Consultation">General Discussion / Plan Review</option>
+                                </select>
+                                <span class="form-error">Please select a coverage type.</span>
+                            </div>
+
+                            <div class="form-group col-span-2">
+                                <label class="form-label" for="contactMessage">Details / Health Priorities</label>
+                                <textarea id="contactMessage" name="message" class="form-input" rows="4"
+                                    placeholder="Mention doctor network requirements, current prescriptions, or preferred deductibles..."></textarea>
+                            </div>
+                        </div>
+
+                        <p class="compliance-disclaimer">By clicking submit, you authorize Sreedhar Madishetty, Licensed
+                            Health
+                            Agent, to contact you via phone, SMS text, or email. Consent is not a condition of purchase.
+                            Data security is managed in compliance with HIPPA guidelines.</p>
+
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Message</button>
+                    </form>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="section-padding faq-section" id="faqs">
+            <div class="container">
+
+                <div class="section-header fade-in-on-scroll">
+                    <span class="section-tag">HAVE QUESTIONS?</span>
+                    <h2 class="editorial-heading">Frequently Asked Questions</h2>
+                    <p>Get clear, compliance-friendly answers to common concerns about coverage periods, network rules,
+                        and federal marketplace subsidies.</p>
+                </div>
+
+                <!-- Accordions Board -->
+                <div class="faq-list fade-in-on-scroll">
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>When is the annual Open Enrollment Period (OEP)?</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                stroke="currentColor" style="width:20px;height:20px;">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">
+                                <p>For standard Affordable Care Act (ACA) policies, the Open Enrollment Period typically
+                                    runs from <strong>November 1 to January 15</strong> each year. Submitting
+                                    enrollments before December 15 ensures a January 1 coverage start date. Outside
+                                    these dates, you can only enroll if you trigger a Qualifying Life Event (e.g.,
+                                    marriage, birth of a child, relocation, or loss of job-based insurance), which opens
+                                    a 60-day Special Enrollment Period (SEP).</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Can I keep my current doctor when switching plans?</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                stroke="currentColor" style="width:20px;height:20px;">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">
+                                <p>Whether you keep your doctor depends on the network type of your new plan.
+                                    <strong>PPO (Preferred Provider Organization)</strong> plans allow you to see
+                                    out-of-network doctors, though in-network care is cheaper. <strong>HMO (Health
+                                        Maintenance Organization)</strong> plans restrict coverage strictly to
+                                    in-network providers except in emergencies. As your agent, I perform a direct
+                                    network formulary lookup using your doctor's name to confirm their network
+                                    inclusions before writing a policy.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>How do government health subsidies work?</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                stroke="currentColor" style="width:20px;height:20px;">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">
+                                <p>Government subsidies are based on your <strong>Modified Adjusted Gross Income
+                                        (MAGI)</strong> relative to the Federal Poverty Level. Under the ACA, you can
+                                    receive <strong>Premium Tax Credits</strong> which lower your monthly cost, and if
+                                    eligible, <strong>Cost-Sharing Reductions (CSR)</strong> which lower your
+                                    out-of-pocket deductibles and copays on Silver-tier plans. I analyze these limits to
+                                    maximize your eligible tax credits during filing.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>What is the difference between HMO, PPO, and HSA plans?</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                stroke="currentColor" style="width:20px;height:20px;">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">
+                                <p>An <strong>HMO</strong> requires primary doctor referrals for specialists and limits
+                                    care to a specific network. A <strong>PPO</strong> gives you freedom to see any
+                                    doctor without referrals. An <strong>HSA-eligible plan</strong> is a High-Deductible
+                                    Health Plan (HDHP) paired with a Health Savings Account, letting you pay for medical
+                                    costs using tax-free dollars. HSA funds never expire, making them an excellent
+                                    wealth and health double-benefit.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer & Disclosures -->
+    <footer class="site-footer">
+        <div class="container footer-grid grid-4">
+
+            <div class="footer-brand">
+                <h3>MS Insurance Services</h3>
+                <p>Unbiased guidance, premium networks, and customized health portfolios. Over 15 years protecting what
+                    matters most.</p>
+            </div>
+
+            <div>
+                <h5 class="footer-links-title">Policy Portfolios</h5>
+                <ul class="footer-links-list">
+                    <li><a href="#policies">Family Health plans</a></li>
+                    <li><a href="#policies">Individual ACA plans</a></li>
+                    <li><a href="#policies">Medicare Supplements</a></li>
+                    <li><a href="#policies">Critical Gap Covers</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h5 class="footer-links-title">Resources</h5>
+                <ul class="footer-links-list">
+                    <li><a href="#policy-finder">Smart Policy Finder</a></li>
+                    <li><a href="#faqs">FAQ Accordions</a></li>
+                    <li><a href="#contact">Direct Contact Channel</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h5 class="footer-links-title">Legal &amp; Admin</h5>
+                <ul class="footer-links-list">
+                    <li><a href="#">Privacy Protection Policy</a></li>
+                    <li><a href="#">CMS Compliance Guidelines</a></li>
+                    <li><a href="#">Terms &amp; Disclosures</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="container footer-bottom">
+            <p>&copy; 2026 MS Insurance Services. All rights reserved. Designed for professional health advisors.</p>
+            <div class="footer-compliance">
+                <p>Disclaimer: MSinsurance service is a licensed independent health insurance agent (NPN: 18940251). All
+                    plan
+                    options, premium prices, and subsidies displayed are estimates for educational demonstrations. Plan
+                    availability varies by zip code and county rules. Policies are underwritten by individual carrier
+                    partners, not MS Insurance Services.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Lead Generation Modal (Quote Form) -->
+    <div class="modal-overlay" id="quoteModal">
+        <div class="glass-card modal-container">
+            <button class="modal-close-btn" data-modal-close aria-label="Close modal">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                    stroke-width="2" style="width:20px;height:20px;">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+
+            <div class="modal-content-wrapper">
+                <h3 class="modal-title">Get a Free Health Quote</h3>
+                <p class="modal-subtitle">Submit details securely. Sreedhar will analyze policies across carriers and
+                    contact you with custom quotes.</p>
+
+                <form id="leadForm" novalidate>
+                    <div class="lead-form-grid" style="margin-bottom: 1.5rem;">
+
+                        <div class="form-group">
+                            <label class="form-label" for="leadName">Full Name *</label>
+                            <input type="text" id="leadName" name="name" class="form-input"
+                                placeholder="Sreedhar Madishetty" required>
+                            <span class="form-error">Please enter your name.</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="leadPhone">Phone Number *</label>
+                            <input type="tel" id="leadPhone" name="phone" class="form-input"
+                                placeholder="(555) 000-0000" required>
+                            <span class="form-error">Please enter a valid phone number.</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="leadEmail">Email Address *</label>
+                            <input type="email" id="leadEmail" name="email" class="form-input"
+                                placeholder="name@domain.com" required>
+                            <span class="form-error">Please enter a valid email address.</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="leadState">State of Residence *</label>
+                            <select id="leadState" name="state" class="form-input" required>
+                                <option value="" disabled selected>Select State</option>
+                                <option value="CA">California (CA)</option>
+                                <option value="FL">Florida (FL)</option>
+                                <option value="GA">Georgia (GA)</option>
+                                <option value="IL">Illinois (IL)</option>
+                                <option value="MI">Michigan (MI)</option>
+                                <option value="NC">North Carolina (NC)</option>
+                                <option value="NY">New York (NY)</option>
+                                <option value="OH">Ohio (OH)</option>
+                                <option value="PA">Pennsylvania (PA)</option>
+                                <option value="TX">Texas (TX)</option>
+                            </select>
+                            <span class="form-error">Please select your state.</span>
+                        </div>
+
+                        <div class="form-group col-span-2">
+                            <label class="form-label" for="leadCoverage">Desired Coverage Plan *</label>
+                            <select id="leadCoverage" name="coverage" class="form-input" required>
+                                <option value="" disabled selected>Select Plan Type</option>
+                                <option value="Family Health Plans">Family Health Plans</option>
+                                <option value="Individual & Family Plans (ACA)">Individual &amp; Family Plans (ACA)
+                                </option>
+                                <option value="Medicare & Senior Plans">Medicare &amp; Senior Plans</option>
+                                <option value="Critical Illness & Short-Term">Critical Illness &amp; Short-Term Gap
+                                </option>
+                            </select>
+                            <span class="form-error">Please select a coverage plan.</span>
+                        </div>
+
+                        <div class="form-group col-span-2">
+                            <label class="form-label" for="leadMessage">Specific Healthcare Demands (Optional)</label>
+                            <textarea id="leadMessage" name="message" class="form-input" rows="3"
+                                placeholder="Doctors, medications, or deductible expectations..."></textarea>
+                        </div>
+                    </div>
+
+                    <p class="compliance-disclaimer" style="margin-bottom: 1.5rem;">I authorize Sreedhar Madishetty,
+                        Licensed
+                        Health Advisor, to deliver quotes via email/call/text. I confirm this is my correct phone/email
+                        contact detail.</p>
+
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Calculate My Quotes</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notifications Container -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- DEMO SUBMISSIONS DASHBOARD DRAWER (Local Storage Logger) -->
+    <div class="demo-dashboard-drawer" id="demoDashboardDrawer">
+        <div class="demo-dashboard-header" id="demoDashboardHeader">
+            <div class="demo-dashboard-title">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                    stroke-width="2" style="width:16px;height:16px;">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+                <span>Demo Submissions Lead Drawer</span>
+                <span class="demo-dashboard-badge" id="demoDashboardBadge" style="display: none;">0</span>
+            </div>
+            <div class="demo-dashboard-toggle-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                    stroke-width="2" style="width:16px;height:16px;">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
+                </svg>
+            </div>
+        </div>
+        <div class="demo-dashboard-content">
+            <div class="demo-submissions-table-wrapper">
+                <table class="demo-submissions-table">
+                    <thead>
+                        <tr>
+                            <th>Lead Name</th>
+                            <th>Phone</th>
+                            <th>Email</th>
+                            <th>State</th>
+                            <th>Coverage Selected</th>
+                            <th>Date / Time</th>
+                        </tr>
+                    </thead>
+                    <tbody id="demoSubmissionsBody">
+                        <tr>
+                            <td colspan="6" class="demo-submission-empty">
+                                No lead inquiries received yet. Submit the Quote Form or Contact Form to see entries log
+                                in real-time.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
